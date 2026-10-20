@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURE11 | 11 Herbs Extract Luxury Shampoo</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-bar">
+        <span class="top-bar-text">✨ Pure Care for Healthier Hair | Luxury Revitalizing Formula</span>
+        <a href="https://wa.me/923254720032" target="_blank" class="contact-now-btn">
+            <i class="fa-brands fa-whatsapp"></i> ORDER VIA WHATSAPP: 03254720032
+        </a>
+    </div>
+    <!-- HEADER -->
+    <header>
+        <div class="custom-header-logo">
+            <a href="#" class="brand-logo"><img src="logo2.png" alt="PURE 11 Logo" class="header-logo"></a>
+    <span class="custom-logo-main">PURE 11</span>
+    <span class="custom-logo-sub">11 HERBS EXTRACT</span>
+</div>
+        <nav class="nav-menu">
+            <a href="#product" style="background-color: #93C572; color: #FFFFFF; padding: 8px 15px; margin: 0 4px; border-radius: 6px; text-decoration: none; font-weight: bold;">Product</a>
+<a href="#videos" style="background-color: #93C572 ; color: #FFFFFF; padding: 8px 15px; margin: 0 4px; border-radius: 6px; text-decoration: none; font-weight: bold;">Videos</a>
+<a href="#gallery" style="background-color: #93C572; color: #FFFFFF; padding: 8px 15px; margin: 0 4px; border-radius: 6px; text-decoration: none; font-weight: bold;">Gallery</a>
+<a href="#herbs" style="background-color: #93C572; color: #FFFFFF; padding: 8px 15px; margin: 0 4px; border-radius: 6px; text-decoration: none; font-weight: bold;">11 Herbs</a>
+<a href="#how-to-use" style="background-color: #93C572; color: #FFFFFF; padding: 8px 15px; margin: 0 4px; border-radius: 6px; text-decoration: none; font-weight: bold;">How to Use</a>
+<a href="#reviews" style="background-color: #93C572; color: #FFFFFF; padding: 8px 15px; margin: 0 4px; border-radius: 6px; text-decoration: none; font-weight: bold;">Reviews</a>
+<a href="#faq" style="background-color: #93C572; color: #FFFFFF; padding: 8px 15px; margin: 0 4px; border-radius: 6px; text-decoration: none; font-weight: bold;">FAQ</a>
+        </nav>
+        <button class="cart-icon-btn" onclick="openCartAlert()">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-badge" id="cartCount">0</span>
+        </button>
+    </header>
+
+    <!-- PRODUCT HERO SECTION -->
+    <main class="container" id="product">
+        
+        <!-- LEFT: GALLERY DISPLAY -->
+        <div class="gallery-container">
+            <div class="main-img-box">
+                <img id="activeImage" src="img1.png" alt="Pure11 Herbal Shampoo">
+                <span class="badge-discount" id="discountBadge">42% OFF</span>
+            </div>
+            
+            <!-- THUMBNAIL LIST -->
+            <div class="thumbnail-list">
+                <div class="thumb active" onclick="switchImage(this, 'main.png')"><img src="main.png" alt="Pure11 Main"></div>
+                <div class="thumb" onclick="switchImage(this, 'display.png')"><img src="display.png" alt="Pure11 Display"></div>
+                <div class="thumb" onclick="switchImage(this, 'ingredients.png')"><img src="ingredients.png" alt="Pure11 Ingredients"></div>
+                <div class="thumb" onclick="switchImage(this, 'logo2.png')"><img src="logo2.png" alt="Pure11 Badge"></div>
+                <div class="thumb" onclick="switchImage(this, '4.png')"><img src="4.png" alt="Pure11 Texture"></div>
+                <div class="thumb" onclick="switchImage(this, '5.png')"><img src="5.png" alt="Pure11 Bottle"></div>
+                <div class="thumb" onclick="switchImage(this, 'side.png')"><img src="side.png" alt="Pure11 Side"></div>
+                <div class="thumb" onclick="switchImage(this, 'closeup.png')"><img src="closeup.png" alt="Pure11 Close-up"></div>
+            </div>
+        </div>
+
+        <!-- RIGHT: PRODUCT DETAILS -->
+        <div class="product-details">
+            <span class="brand-subtitle">Nature's Best for Your Hair</span>
+            <h1 class="product-title">Pure11 - 11 Herbs Extract Shampoo</h1>
+            <p class="tagline">A Luxury Fusion of 11 Rare Herbs for Balanced Hair & Scalp</p>
+            
+            <div class="price-container">
+                <span class="current-price">Rs. 1,350</span>
+                <span class="original-price">Rs. 2330</span>
+                <span class="discount-tag" id="calculatedOff" style="color: green !important; font-weight: bold !important;">SAVE 42%</span> 
+            
+            </div>
+
+            <div class="benefits-checklist">
+                <div class="b-item"><i class="fa-solid fa-droplet"></i> <div><strong>Cleanses Gently</strong> Removes dirt & excess oil</div></div>
+                <div class="b-item"><i class="fa-solid fa-shield-halved"></i> <div><strong>Strengthens Hair</strong> Reduces breakage & fall</div></div>
+                <div class="b-item"><i class="fa-solid fa-spa"></i> <div><strong>Nourishes Scalp</strong> Soothes, refreshes & balances oil</div></div>
+                <div class="b-item"><i class="fa-solid fa-wand-magic-sparkles"></i> <div><strong>Healthy & Shiny Hair</strong> Promotes natural radiance</div></div>
+            </div>
+
+            <div class="description-card">
+                <h3><i class="fa-solid fa-leaf"></i> Luxury Revitalizing Formula</h3>
+                <p>
+                    Pure11 Shampoo delivers deep nourishment directly to your scalp and hair follicles. Infused with 11 pure herbal extracts, it restores vital hydration, prevents grease buildup, and leaves your hair noticeably stronger, shinier, and healthier after every wash.
+                </p>
+            </div>
+
+            <div class="action-zone">
+                <div class="quantity-control">
+                    <button class="qty-btn" onclick="updateQty(-1)">-</button>
+                    <input type="text" id="qtyInput" class="qty-input" value="1" readonly>
+                    <button class="qty-btn" onclick="updateQty(1)">+</button>
+                </div>
+
+            <!-- یوزر کی ای میل کا ان پٹ باکس -->
+   <input type="email" id="customerEmail" placeholder="Enter your email address" style="padding: 8px; width: 200px; margin-right: 5px;" required>
+
+<button class="btn-add-cart" onclick="sendOrderToWhatsApp()">
+    <i class="fa-solid fa-cart-plus"></i> ADD TO CART & ORDER
+</button>
+            </div>
+
+            <a href="https://wa.me/923254720032?text=Hello%20Pure11!%20I%20want%20to%20order%20the%2011%20Herbs%20Extract%20Shampoo." target="_blank" class="btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> ORDER VIA WHATSAPP (03254720032)
+            </a>
+
+            <div class="delivery-notice">
+                <i class="fa-solid fa-truck-fast"></i> Home Delivery Available 
+            </div>
+        </div>
+    </main>
+
+    <!-- SECTION 2: VIDEO SHOWCASE -->
+    <section class="section-wrapper" id="videos">
+        <h2 class="section-heading">Video Demonstrations</h2>
+        <p class="section-subheading">See the texture, organic formula, and presentation of Pure11 Shampoo</p>
+
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-container">
+                    <video controls poster="women.mp4">
+                        <source src="women.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <h4>Pure11 Official Product Showcase</h4>
+                <p>11 Herbs Extract Formula in Action</p>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <video controls poster="product.mp4">
+                        <source src="product.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <h4>Rich Herbal Texture & Dispenser Demo</h4>
+                <p>Natural herbal concentration & smooth pump flow</p>
+            </div>
+             <div class="video-card">
+                <div class="video-container">
+                    <video controls poster="VID-20261018-WA0026.mp4">
+                        <source src="VID-20261018-WA0026.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <h4>Pure11 Magic: Stronger & Healthier Hair Showcase</h4>
+                <p>Discover how Pure11 Shampoo restores hair follicles, reduces breakage, and promotes noticeably stronger, healthier hair after every wash.</p>
+            </div>
+               <div class="video-card">
+                <div class="video-container">
+                    <video controls poster="VID-20261018-WA0024.mp4">
+                        <source src="VID-20261018-WA0024.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <h4>Natural Silky & Smooth Hair</h4>
+                <p>Experience naturally silky, smooth and shiny hairs with Pure11- Pure Hairs, Pure Confidence</p>
+            </div>
+             <div class="video-card">
+                <div class="video-container">
+                    <video controls poster="VID-20261019-WA0048.mp4">
+                        <source src="VID-20261019-WA0048.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <h4>Deep Nourishment & Frizz-Free Finish</h4>
+                <p>Watch how our deep-nourishing formula tames frizz, locks in vital hydration, and leaves your hair with a smooth, glossy finish.</p>
+            </div>
+             <div class="video-card">
+                <div class="video-container">
+                    <video controls poster="VID-20261019-WA0049.mp4">
+                        <source src="VID-20261019-WA0049.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <h4>Silky Soft Tresses: Ultimate Hair Care Proof</h4>
+                <p>See real results of silky, soft, and beautiful hair texture achieved naturally through our rich herbal ingredient blend.</p>
+            </div> 
+            <div class="video-card">
+                <div class="video-container">
+                    <video controls poster="VID-20261019-WA0051.mp4">
+                        <source src="VID-20261019-WA0051.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <h4>Transformational Hair Results & Real Shine</h4>
+                <p>Witness the incredible transformation of hair strength, natural shine, and overall vitality with Pure11 Shampoo, powered by 11 essential herbal extracts.</p>
+            </div> 
+        </div>
+    </section>
+
+    <!-- SECTION 3: PHOTO GALLERY -->
+    <section class="section-wrapper" id="gallery">
+        <h2 class="section-heading">Product Photo Gallery</h2>
+        <p class="section-subheading">High-definition looks at our packaging and herbal formula</p>
+
+        <div class="photo-grid">
+            <div class="photo-card" onclick="switchImage(this, 'logo.png')">
+                <img src="logo.png" alt="Pure11 Natural Care">
+            </div>
+            <div class="photo-card" onclick="switchImage(this, 'img1.png')">
+                <img src="img1.png" alt="Pure Hair Pure Confidence">
+            </div>
+            <div class="photo-card" onclick="switchImage(this, 'IMG-20260925-WA0001.jpg')">
+                <img src="IMG-20260925-WA0001.jpg" alt="11 Herbs List">
+            </div>
+            <div class="photo-card" onclick="switchImage(this, 'IMG-20260924-WA0112.jpg')">
+                <img src="IMG-20260924-WA0112.jpg" alt="Pure11 Seal Badge">
+            </div>
+            <div class="photo-card" onclick="switchImage(this, 'IMG-20260924-WA0125.jpg')">
+                <img src="IMG-20260924-WA0125.jpg" alt="Shampoo Consistency">
+            </div>
+            <div class="photo-card" onclick="switchImage(this, 'IMG-20260925-WA0000.jpg')">
+                <img src="IMG-20260925-WA0000.jpg" alt="Marble Base Bottle View">
+            </div>
+            <div class="photo-card" onclick="switchImage(this, 'IMG-20260924-WA0123.jpg')">
+                <img src="IMG-20260924-WA0123.jpg" alt="Pure11 Bottle Profile">
+            </div>
+            <div class="photo-card" onclick="switchImage(this, 'IMG-20260924-WA0131.jpg')">
+                <img src="IMG-20260924-WA0131.jpg" alt="Pure11 Liquid Extraction">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE 11 HERBS EXTRACT INGREDIENTS -->
+    <section class="section-wrapper" id="ingredients">
+        <h2 class="section-heading">Infused With 11 Powerful Herbs</h2>
+        <p class="section-subheading">Our luxury fusion of 11 rare herbs for complete hair and scalp revitalization</p>
+
+        <div class="herbs-grid">
+            <div class="herb-card"><i class="fa-solid fa-seedling"></i> <h4>Aloe Vera Extract</h4><p>Deeply hydrates and calms scalp irritation.</p></div>
+            <div class="herb-card"><i class="fa-solid fa-bolt"></i> <h4>Ginseng Extract</h4><p>Invigorates hair roots and encourages growth.</p></div>
+            <div class="herb-card"><i class="fa-solid fa-fan"></i> <h4>Chamomile Extract</h4><p>Enhances natural shine and softens hair strands.</p></div>
+            <div class="herb-card"><i class="fa-solid fa-leaf"></i> <h4>Nettle Extract</h4><p>Combats hair thinning and restores vitality.</p></div>
+            <div class="herb-card"><i class="fa-solid fa-mug-saucer"></i> <h4>Green Tea Extract</h4><p>Rich in antioxidants to shield hair from stress.</p></div>
+            <div class="herb-card"><i class="fa-solid fa-plant-wilt"></i> <h4>Rosemary Extract</h4><p>Improves scalp circulation for stronger roots.</p></div>
+            <div class="herb-card"><i class="fa-solid fa-clover"></i> <h4>Thyme Extract</h4><p>Purifies the scalp and clears environmental buildup.</p></div>
+            <div class="herb-card"><i class="fa-solid fa-spa"></i> <h4>Lavender Extract</h4><p>Soothes dryness and adds a relaxing floral scent.</p></div>
+            <div class="herb-card"><i class="fa-solid fa-tree"></i> <h4>Burdock Root Extract</h4><p>Strengthens structural keratin to reduce breakage.</p></div>
+            <div class="herb-card"><i class="fa-solid fa-feather"></i> <h4>Sage Extract</h4><p>Balances natural sebum production for oily scalps.</p></div>
+            <div class="herb-card"><i class="fa-solid fa-snowflake"></i> <h4>Peppermint Oil & Glycerin</h4><p>Provides a cooling, refreshed scalp sensation.</p></div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: HOW TO USE & CAUTIONS -->
+    <section class="section-wrapper" id="usage">
+        <div class="usage-container">
+            <div class="usage-box">
+                <h3><i class="fa-solid fa-hand-holding-droplet"></i> Directions For Use</h3>
+                <ol class="usage-steps">
+                    <li>Wet hair thoroughly with lukewarm water.</li>
+                    <li>Pump a generous amount of Pure11 Shampoo into your palms.</li>
+                    <li>Massage gently into wet hair and scalp until a rich lather forms.</li>
+                    <li>Rinse thoroughly. Repeat if desired for extra deep cleansing.</li>
+                </ol>
+            </div>
+            <div class="caution-box">
+                <h3><i class="fa-solid fa-triangle-exclamation"></i> Cautions & Storage</h3>
+                <ul>
+                    <li>For external use only.</li>
+                    <li>Avoid direct contact with eyes. If contact occurs, rinse immediately with clean water.</li>
+                    <li>Keep out of reach of children. Store in a cool, dry place away from direct sunlight.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: REVIEWS -->
+    <section class="section-wrapper" id="reviews">
+        <h2 class="section-heading">Real Customer Experiences</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"My hair fall reduced significantly after just two weeks of using Pure11. The herbal scent is amazing."</p>
+                <strong>- Sana K. (Verified Buyer)</strong>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Controls oily scalp without making the hair ends dry. The natural thickness feels great."</p>
+                <strong>- Muhammad Umar (Verified Buyer)</strong>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Loved the texture and how gentle it is. Delivered quickly to my doorstep!"</p>
+                <strong>- Ayesha M. (Verified Buyer)</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: FAQ -->
+    <section class="section-wrapper" id="faq">
+        <h2 class="section-heading">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>Is Pure11 Shampoo safe for daily use?</summary>
+                <p>Yes. The gentle 11 Herbs Extract formula is designed for daily or 3-times-a-week washing without stripping natural moisture.</p>
+            </details>
+            <details class="faq-item">
+                <summary>What hair types can use this shampoo?</summary>
+                <p>Pure11 is suitable for all hair types—including dry, oily, damaged, or color-treated hair.</p>
+            </details>
+            <details class="faq-item">
+                <summary>How can I order and pay?</summary>
+                <p>You can click the Add to Cart button or click the WhatsApp button to message us directly at 03254720032. Cash on delivery is available nationwide.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2 style="color: #4A154B !important;">PURE 11</h2>
+                <p>11 Herbs Extract Luxury Revitalizing Shampoo</p>
+            </div>
+            <div class="footer-contact">
+                <p style="color: #FFFFFF !important;">
+    <i class="fa-solid fa-phone"></i> WhatsApp Order Line: 
+    <a href="https://wa.me/923254720033?text=Hello!%20I%20want%20to%20place%20an%20order%20for%20Pure11%20Shampoo." target="_blank" style="color: #25D366 !important; text-decoration: none; font-weight: bold;">
+        03254720033
+    </a>
+</p>
+                <p><i class="fa-solid fa-truck"></i> Home Delivery Available</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PURE11 Cosmetics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toastNotification">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMsg">Pure11 Shampoo added to cart!</span>
+    </div>
+
+    <script src="script.js"></script>
+   <script>
+function switchImage(element, imageSrc) {
+    // 1. آپ کی بڑی تصویر (جس کی ID activeImage ہے)
+    var mainImg = document.getElementById("activeImage");
+    if (mainImg) {
+        mainImg.src = imageSrc;
+    }
+
+    // 2. تھمب نیل پر ایکٹیو کا نشان بدلنے کے لیے
+    var thumbs = document.querySelectorAll(".thumb");
+    thumbs.forEach(function(thumb) {
+        thumb.classList.remove("active");
+    });
+    element.classList.add("active");
+}
+{
+function sendOrderToWhatsApp() {
+    var emailField = document.getElementById("customerEmail");
+    if (!emailField || emailField.value.trim() === "") {
+        alert("Please enter your email address first!");
+        return;
+    }
+    var emailInput = emailField.value;
+
+    var qtyField = document.getElementById("qtyInput");
+    var quantity = qtyField ? qtyField.value : 1;
+
+    var productName = "Pure11 Shampoo";
+    var productPrice = 1350 * quantity;
+    var whatsappNumber = "923254720032";
+
+    var isConfirmed = confirm("Cart Summary:\nProduct: " + productName + "\nQuantity: " + quantity + "\nTotal Price: Rs. " + productPrice + "\nEmail: " + emailInput + "\n\nDo you want to confirm this order?");
+
+    if (isConfirmed) {
+        var message = "Hello, I want to place an order:\n\n📧 Email: " + emailInput + "\n🛍️ Product: " + productName + "\n🔢 Quantity: " + quantity + "\n💰 Total Price: Rs. " + productPrice + "\n\nPlease confirm my order.";
+        
+        var whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+        window.open(whatsappURL, '_blank');
+    }
+}
+}
+</script>
+</body>
+</html>
