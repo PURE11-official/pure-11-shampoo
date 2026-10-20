@@ -736,3 +736,31 @@ footer {
         object-fit: contain;
     }
 }
+/* Universal Mobile Image Fix */
+@media screen and (max-width: 768px) {
+    /* Target all main product images & sliders */
+    img, 
+    .slider img, 
+    .carousel img, 
+    .product-img img,
+    div[class*="image"] img,
+    div[class*="slider"] img {
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: 380px !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    /* Container height reset */
+    .slider, 
+    .carousel, 
+    .product-image,
+    div[class*="image"],
+    div[class*="slider"] {
+        height: auto !important;
+        max-height: 400px !important;
+        overflow: hidden !important;
+    }
+}
