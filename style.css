@@ -934,3 +934,36 @@ footer {
         object-fit: contain !important;
     }
 }
+/* --- Final Image Fix for Mobile --- */
+@media screen and (max-width: 768px) {
+    .main-image-container,
+    .product-image-slider,
+    .carousel-inner,
+    .slider,
+    .carousel,
+    div[class*="slider"],
+    div[class*="image"] {
+        height: auto !important;
+        min-height: auto !important;
+        max-height: none !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        overflow: visible !important;
+    }
+
+    .main-image-container img,
+    .product-image-slider img,
+    .carousel-inner img,
+    .slider img,
+    .carousel img,
+    div[class*="slider"] img,
+    div[class*="image"] img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 350px !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+}
