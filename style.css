@@ -764,3 +764,66 @@ footer {
         overflow: hidden !important;
     }
 }
+/* --- Mobile Product Box & Layout Fix --- */
+@media screen and (max-width: 768px) {
+    /* 1. Main Container Fix */
+    .container, 
+    #product, 
+    .product-details, 
+    section {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* 2. Image Container & Slider Fix */
+    .main-image-container,
+    .product-image-slider,
+    .carousel-inner,
+    .slider,
+    .carousel,
+    div[class*="slider"],
+    div[class*="image"] {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    /* 3. Main Product Image Display Fix */
+    .main-image-container img,
+    .product-image-slider img,
+    .carousel-inner img,
+    .slider img,
+    .carousel img,
+    div[class*="slider"] img,
+    div[class*="image"] img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: 380px !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    /* 4. Text and Buttons Alignment Fix */
+    h1, h2, h3, p, .product-title, .price {
+        word-break: break-word !important;
+        max-width: 100% !important;
+    }
+
+    /* 5. Add to Cart / WhatsApp Button Container Fix */
+    .action-zone, 
+    .cart-btn-container,
+    form {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
