@@ -697,3 +697,42 @@ footer {
         overflow-wrap: break-word;
     }
 }
+/* Main product image container sizing */
+.main-image-container,
+.product-image-slider,
+.carousel-inner {
+    width: 100%;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* Main image fit fix */
+.main-image-container img,
+.product-image-slider img,
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    display: block;
+}
+/* Mobile Screen Adjustment */
+@media (max-width: 768px) {
+    .main-image-container,
+    .product-image-slider,
+    .carousel-inner {
+        height: 350px;
+    }
+
+    .main-image-container img,
+    .product-image-slider img,
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
