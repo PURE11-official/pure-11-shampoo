@@ -896,3 +896,41 @@ footer {
         padding: 0 10px !important;
     }
 }
+/* --- ABSOLUTE FORCE FIT FOR MOBILE --- */
+@media screen and (max-width: 768px) {
+    /* اسکرین کی چوڑائی کو زبردستی 100% پر لاک کرنا */
+    html, body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        position: relative !important;
+    }
+
+    /* تمام ایلیمنٹس کو اسکرین کی حد میں رکھنا */
+    *, *::before, *::after {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* ہیڈنگ اور عنوان کا ٹیکسٹ اسکرین سے باہر نہ جائے */
+    h1, h2, h3, h4, .product-title, .title {
+        font-size: 20px !important; /* ٹیکسٹ سائيز تھوڑا چھوٹا کریں */
+        word-break: break-all !important;
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    /* تصویر اور سائیڈر کو زبردستی فٹ کرنا */
+    .main-image-container, .product-image-slider, .carousel-inner, .slider {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 350px !important;
+        overflow: hidden !important;
+    }
+
+    .main-image-container img, .product-image-slider img, .carousel-inner img, .slider img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+    }
+}
