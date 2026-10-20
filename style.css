@@ -967,3 +967,41 @@ footer {
         margin: 0 auto !important;
     }
 }
+/* --- Final Accurate Fix for PURE11 Main Image on Mobile --- */
+@media screen and (max-width: 768px) {
+    /* گیلری اور مین امیج باکس کا موبائل لے آؤٹ درست کرنا */
+    .gallery-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* مین امیজ باکس کی فکسڈ ہائٹ ختم کرنا تاکہ تصویر نہ کٹے */
+    .main-img-box {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 380px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        overflow: hidden !important;
+        background-color: #000 !important;
+        border-radius: 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* اصل تصویر (#activeImage) کو اسکرین کے اندر مکمل فٹ کرنا */
+    .main-img-box img, 
+    #activeImage {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 380px !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+}
